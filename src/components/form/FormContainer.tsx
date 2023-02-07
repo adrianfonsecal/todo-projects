@@ -10,12 +10,13 @@ export const FormContainer = ({project}: ProjectFormProps) => {
   
   if( project ) {
     const { handleSubmit } = useSendProject(project);
+    console.log(project);
   }
     const { handleSubmit } = useSendProject();
 
   return (
     <>
-      {project ? (
+      { project ? (
         <form onSubmit={handleSubmit}>
           <h1>Form</h1>
           <FormUpdate project={project} />

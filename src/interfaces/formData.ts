@@ -8,4 +8,5 @@ export interface FormDataObject {
 
 export interface ProjectFormProps {
     project?: Project;
+    id?: string;
 }

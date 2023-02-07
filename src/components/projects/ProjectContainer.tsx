@@ -1,5 +1,5 @@
 import { Context, useContext } from "react";
-import { ProjectContext } from "../../App";
+import { ProjectContext } from "../../helpers/projectContext";
 import { ProjectContextType } from "../../interfaces/projects";
 import { ProjectsItems } from "./ProjectsItems"
 
