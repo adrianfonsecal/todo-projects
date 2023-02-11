@@ -24,7 +24,7 @@ export const useFetchProjects = () => {
     useEffect(() => {
         getProjects()
         .then(updateStateBeforePromise);
-    }, [state.projects]);
+    }, []);
 
     return state;
 }

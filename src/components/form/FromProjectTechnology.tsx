@@ -12,8 +12,7 @@ export const FromProjectTechnology = ({project}: ProjectFormProps) => {
           type="text"
           className="form-control project-input"
           id="technology"
-          name="technology"
-          value={project ? project.technology : ""}
+          name="technology"          
         />
       </div>
     </>

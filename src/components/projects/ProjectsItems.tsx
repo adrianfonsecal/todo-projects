@@ -13,9 +13,6 @@ export const ProjectsItems = ({project}: ProjectProps) => {
     deleteProject(project.id);  
   };
 
-  useEffect(() => {
-    
-  }, [project]);
 
   return (
     <>
