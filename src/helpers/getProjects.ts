@@ -11,6 +11,7 @@ const returnProjectProperties = (project:Project) => {
     }; 
 }
 
+
 export const getProjects = async () => {
 
     const resp = await fetch(url);

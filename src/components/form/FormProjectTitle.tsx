@@ -12,7 +12,6 @@ export const FormProjectTitle = ({project}: ProjectFormProps) => {
               className="form-control project-input"
               id="title"
               name="title"
-              value={project ? project.title : ""}
             />
           </div>
     </>

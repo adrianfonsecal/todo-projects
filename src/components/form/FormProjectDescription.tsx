@@ -13,7 +13,7 @@ export const FormProjectDescription = ({project}: ProjectFormProps) => {
               id="description"
               name="description"
               rows={2}
-              value={project ? project.description : ""}
+              
             />
           </div>
     </>

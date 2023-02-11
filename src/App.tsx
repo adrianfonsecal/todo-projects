@@ -1,22 +1,18 @@
-import { createContext, useEffect } from "react";
-import { FormContainer } from "./components/form/FormContainer";
-import { ProjectContainer } from "./components/projects/ProjectContainer";
-import {  useFetchProjects } from "./hooks/useFetchProjects";
-import {  ProjectContextType } from "./interfaces/projects";
+import { ProjectContext } from "./helpers/projectContext";
+import { useFetchProjects } from "./hooks/useFetchProjects";
+import { AppRouter } from "./router/AppRouter";
 
-export const ProjectContext = createContext<ProjectContextType |null>(null);
 
-function App() {
+const App = () => {
+
   const { projects } = useFetchProjects();
-
   return (
-    <ProjectContext.Provider value={{projects}}>
+    <ProjectContext.Provider value={{ projects }}>
       <div className="App">
-        <ProjectContainer />
-        <FormContainer />
+        <AppRouter />        
       </div>
     </ProjectContext.Provider>
   );
-}
+};
 
 export default App;
